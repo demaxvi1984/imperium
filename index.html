@@ -618,6 +618,22 @@ footer{
   .tg-item img { width:100%; height:100%; object-fit:cover; display:block; transition: transform .4s ease; }
   .tg-item:hover img { transform: scale(1.03); }
   .tg-tall { grid-row: span 2; }
+
+  .awards {
+    display: flex; flex-direction: column; gap: 8px;
+    margin: 20px 0;
+  }
+  .award-item {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 12px 16px;
+    background: var(--black3);
+    font-size: 14px; color: rgba(240,237,232,0.8);
+    line-height: 1.5;
+    border-left: 2px solid rgba(74,127,165,0.3);
+    transition: border-color .3s;
+  }
+  .award-item:hover { border-left-color: var(--steel); }
+  .award-item span { flex: 1; }
 </style>
 </head>
 <body>
@@ -666,8 +682,8 @@ footer{
       <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) 100%);z-index:1;pointer-events:none;"></div>
     </div>
     <div class="manifesto-quote r" style="z-index:2;">
-      <p>Моя работа начинается не с упражнений, а с мышления.</p>
-      <cite>Андрей</cite>
+      <p>Чемпион Волгоградской области по пауэрлифтингу · 20+ лет в силовом спорте</p>
+      <cite>Андрей Владимирович</cite>
     </div>
   </div>
 </section>
@@ -782,23 +798,32 @@ footer{
     </div>
     <div>
       <div class="about-eyebrow r">Об эксперте</div>
-      <p class="about-name r">Андрей</p>
-      <p class="about-role r">Тренер · Наставник</p>
+      <p class="about-name r">Андрей Владимирович</p>
+      <p class="about-role r">Тренер · Наставник · Чемпион</p>
 
       <p class="about-text r">
-        Моя задача — не просто помочь накачаться или похудеть. Я помогаю выстроить
-        <strong>дисциплину, уверенность в себе, внутренний стержень</strong> и привычки,
-        которые приводят к результату не только в зале, но и в жизни.
+        Более <strong>20 лет в силовом спорте</strong>. Путь от тхэквондо до соревновательного пауэрлифтинга.
+        Тренировался под руководством Дениса Полянского, учился у сильнейших в российском бодибилдинге.
+        Сегодня помогаю мужчинам и женщинам становиться сильнее, здоровее и увереннее в себе.
       </p>
 
       <div class="about-principle r">
-        <p>За каждой сильной фигурой стоит сильный характер. Именно поэтому моя работа начинается не с упражнений, а с мышления.</p>
+        <p>Настоящая сила — это способность двигаться к цели независимо от возраста, обстоятельств и трудностей.</p>
+      </div>
+
+      <!-- Регалии -->
+      <div class="awards r">
+        <div class="award-item">🏆 <span>Чемпион Волгоградской области по пауэрлифтингу (2016, тяжёлая категория)</span></div>
+        <div class="award-item">🏋️ <span>Более 20 лет тренировочного опыта</span></div>
+        <div class="award-item">🥇 <span>Многолетняя практика в силовом троеборье</span></div>
+        <div class="award-item">👥 <span>Опыт подготовки спортсменов и любителей фитнеса</span></div>
+        <div class="award-item">💪 <span>Авторская система на основе силы, дисциплины и прогрессивной нагрузки</span></div>
       </div>
 
       <div class="about-results r">
-        <div class="ar-stat"><div class="ar-num">90</div><div class="ar-lbl">дней трансформации</div></div>
+        <div class="ar-stat"><div class="ar-num">20+</div><div class="ar-lbl">лет в спорте</div></div>
+        <div class="ar-stat"><div class="ar-num">2016</div><div class="ar-lbl">Чемпион области</div></div>
         <div class="ar-stat"><div class="ar-num">3</div><div class="ar-lbl">формата работы</div></div>
-        <div class="ar-stat"><div class="ar-num">∞</div><div class="ar-lbl">база знаний</div></div>
       </div>
 
       <!-- Фото тренера -->
@@ -869,7 +894,7 @@ footer{
       <p class="final-sub r">
         Оставьте заявку — менеджер свяжется с вами, ответит на вопросы и поможет выбрать подходящий формат работы.
       </p>
-      <a href="https://t.me/Demaxvi" target="_blank" class="btn btn-primary r" style="font-size:15px;padding:18px 44px;">
+      <a href="https://t.me/NamynaVin" target="_blank" class="btn btn-primary r" style="font-size:15px;padding:18px 44px;">
         Оставить заявку менеджеру
       </a>
     </div>
@@ -880,7 +905,7 @@ footer{
         <p class="final-option-price">100 000 ₩</p>
         <p class="final-option-desc">Пробная тренировка — знакомство, оценка уровня, постановка целей.</p>
         <div class="final-btn-wrap">
-          <a href="https://t.me/Demaxvi" target="_blank" class="btn btn-outline" style="font-size:13px;padding:12px 24px;">Записаться →</a>
+          <a href="https://t.me/NamynaVin" target="_blank" class="btn btn-outline" style="font-size:13px;padding:12px 24px;">Записаться →</a>
         </div>
       </div>
       <div class="final-option r">
@@ -888,7 +913,7 @@ footer{
         <p class="final-option-price">30 000 ₩ <span>/ 1 499 ₽ / $20</span></p>
         <p class="final-option-desc">Подписка на методики, программы и профессиональные наработки тренера.</p>
         <div class="final-btn-wrap">
-          <a href="https://t.me/Demaxvi" target="_blank" class="btn btn-outline" style="font-size:13px;padding:12px 24px;">Вступить →</a>
+          <a href="https://t.me/NamynaVin" target="_blank" class="btn btn-outline" style="font-size:13px;padding:12px 24px;">Вступить →</a>
         </div>
       </div>
     </div>
